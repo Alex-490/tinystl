@@ -1,0 +1,5 @@
+对象可能通过对象名，也可能通过指针来访问
+凡是用 new / new[] 创建的对象 → 用 delete / delete[] 销毁
+凡是你“手动构造”的对象（placement new） → 必须手动析构 + operator delete
+
+函数同时存在const和非const版本有时候是因为创建对象时会有const对象和非const对象
